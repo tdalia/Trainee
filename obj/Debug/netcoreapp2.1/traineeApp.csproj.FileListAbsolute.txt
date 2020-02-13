@@ -1,0 +1,14 @@
+d:\CogentTraining\NET Market\Projects\traineeApp\bin\Debug\netcoreapp2.1\traineeApp.deps.json
+d:\CogentTraining\NET Market\Projects\traineeApp\bin\Debug\netcoreapp2.1\traineeApp.runtimeconfig.json
+d:\CogentTraining\NET Market\Projects\traineeApp\bin\Debug\netcoreapp2.1\traineeApp.runtimeconfig.dev.json
+d:\CogentTraining\NET Market\Projects\traineeApp\bin\Debug\netcoreapp2.1\traineeApp.dll
+d:\CogentTraining\NET Market\Projects\traineeApp\bin\Debug\netcoreapp2.1\traineeApp.pdb
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.csprojAssemblyReference.cache
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.csproj.CoreCompileInputs.cache
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.RazorAssemblyInfo.cache
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.RazorAssemblyInfo.cs
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.AssemblyInfoInputs.cache
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.AssemblyInfo.cs
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.RazorTargetAssemblyInfo.cache
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.dll
+d:\CogentTraining\NET Market\Projects\traineeApp\obj\Debug\netcoreapp2.1\traineeApp.pdb

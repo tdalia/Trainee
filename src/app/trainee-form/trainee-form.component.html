@@ -1,0 +1,80 @@
+<form  (ngSubmit)="onSubmit(traineeFrm)"  [formGroup]="traineeFrm">
+    <h2>{{data.modalTitle}}</h2>
+
+    <!-- Name-->
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Name" formControlName="name" >
+        <mat-error *ngIf="formErrors.name">
+          {{ formErrors.name }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Email -->
+    <div>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" formControlName="email" >
+            <mat-error *ngIf="formErrors.email">
+              {{ formErrors.email }}
+            </mat-error>
+          </mat-form-field>
+    </div>
+
+    <p>
+      <mat-radio-group class="trainee-radio-group" formControlName="gender" >
+        <mat-radio-button class="trainee-radio-button" *ngFor="let gndr of genders" [value]="gndr.id">
+          {{ gndr.name }}
+        </mat-radio-button>
+      </mat-radio-group>
+      <mat-error *ngIf="formErrors.gender">
+        {{ formErrors.gender }}
+      </mat-error>
+    </p>
+
+    <!-- Birth Date -->
+    <div>
+        <mat-form-field appearance="outline">
+            <input matInput [matDatepicker]="picker" placeholder="Birthday" formControlName="birth" >
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+            <mat-error *ngIf="formErrors.birth">
+              {{ formErrors.birth }}
+            </mat-error>
+          </mat-form-field>
+    </div>
+
+    <!-- Experienced Technologies-->
+    <div>
+      <mat-form-field appearance="outline">
+        <mat-select placeholder="Experienced In" formControlName="experiencedTechno">
+          <mat-option>-- None -- </mat-option>
+          <mat-option *ngFor="let techno1 of expTechnos" [value]="techno1">
+            {{ techno1 }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="formErrors.experiencedTechno" >
+          {{ formErrors.experiencedTechno }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Message -->
+    <div>
+      <mat-form-field appearance="outline">
+        <textarea matInput placeholder="Message..." formControlName="message"></textarea>
+        <mat-error *ngIf="formErrors.message" >
+            {{ formErrors.message }}
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+  <div>
+      <button type="button" mat-raised-button color="warn" (click)="dialogRef.close()">Cancel</button>&nbsp;
+      <button type="submit" mat-raised-button color="primary" >{{data.modalBtnTitle}}</button>
+       <!-- [disabled]="traineeFrm.invalid"-->
+    </div>
+</form>
+
